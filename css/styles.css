@@ -1,0 +1,104 @@
+.std_in {
+  width: 50%;
+  height: 37rem;
+  text-align: center;
+  background-color: rgba(29, 25, 25, 0.945);
+  font-size: x-large;
+  border: solid;
+}
+
+body {
+  background-color: rgb(19, 17, 17, 1);
+  color: antiquewhite;
+}
+
+#loading {
+  display: none;
+  width: 400px;
+  height: 300px;
+  left: 62%;
+  top: 27%;
+  position: fixed;
+}
+
+.std_out {
+  width: 50%;
+  height: 37rem;
+  background-color: rgba(29, 25, 25, 0.945);
+  text-align: center;
+  font-size: x-large;
+  border: solid;
+}
+.heading {
+  width: 100%;
+  text-align: center;
+  height: 50px;
+}
+.container {
+  display: flex;
+}
+
+h5 {
+  margin: 0;
+}
+
+.ply_btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 12px 15px rgb(0 0 0 / 50%);
+  cursor: pointer;
+  outline: none;
+  width: 164px;
+  height: 46px;
+  position: relative;
+  top: -54px;
+  right: -43%;
+}
+
+.ply_btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.ply_btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -12px;
+  right: -20px;
+  transition: 0.5s;
+  font-size: xx-large;
+}
+
+.ply_btn:hover span {
+  padding-right: 25px;
+}
+
+.ply_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#source {
+  background-color: rgb(39, 33, 33);
+  color: antiquewhite;
+}
+
+#input {
+  background-color: rgb(39, 33, 33);
+  color: antiquewhite;
+}
+
+#output {
+  background-color: rgb(39, 33, 33);
+  color: antiquewhite;
+}
