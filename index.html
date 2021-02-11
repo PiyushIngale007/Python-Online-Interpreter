@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/jquery-linedtextarea.js"></script>
+    <link
+      href="css/jquery-linedtextarea.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Online Interpreter</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h2>Python Online Interpreter</h2>
+      <button type="button" onclick="onClickRun()" class="ply_btn">
+        <span>Let's Run</span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="std_in">
+        <textarea
+          id="source"
+          style="width: calc(99%); height: 414px; resize: vertical"
+        >
+#Write your code here
+print("Hello World!!")</textarea
+        >
+
+        <h5>Input</h5>
+
+        <textarea
+          id="input"
+          style="width: calc(99%); height: 23%; resize: vertical"
+        ></textarea>
+      </div>
+      <div class="std_out">
+        <img id="loading" src="assets/loading.gif" />
+        <textarea
+          readonly
+          id="output"
+          style="width: 99%; height: 99%; top: 0; right: 0; resize: none"
+        ></textarea>
+      </div>
+    </div>
+
+    <script>
+      $('#source').linedtextarea();
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
