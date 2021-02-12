@@ -102,3 +102,44 @@ h5 {
   background-color: rgb(39, 33, 33);
   color: antiquewhite;
 }
+
+@media (max-width: 786px) {
+  .container {
+    display: unset;
+  }
+  #output {
+    display: none;
+  }
+
+  #input {
+    width: 98%;
+    /* width: calc(99%); */
+    height: 24%;
+    /* resize: vertical; */
+  }
+  #source {
+    width: 366.5px;
+    height: 537px;
+    resize: none;
+  }
+
+  .std_out {
+    width: 50%;
+    height: 37rem;
+    background-color: rgba(29, 25, 25, 0.945);
+    text-align: center;
+    font-size: x-large;
+    border: solid;
+    display: none;
+  }
+
+  .std_in {
+    width: 111%;
+    height: 48rem;
+    text-align: center;
+    background-color: rgba(29, 25, 25, 0.945);
+    font-size: x-large;
+    border: solid;
+  }
+
+}
