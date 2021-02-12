@@ -108,6 +108,17 @@ h5 {
   color: antiquewhite;
 }
 
+  .play {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+}
+
+
 @media (max-width: 786px) {
   .container {
     display: unset;
