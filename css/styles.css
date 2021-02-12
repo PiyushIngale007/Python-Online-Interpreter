@@ -121,7 +121,7 @@ h5 {
   }
   #source {
     width: 366.5px;
-    height: 540px;
+    height: 530px;
     resize: none;
   }
 
@@ -137,7 +137,7 @@ h5 {
 
   .std_in {
     width: 111%;
-    height: 48rem;
+    height: 47rem;
     text-align: center;
     background-color: rgba(29, 25, 25, 0.945);
     font-size: x-large;
