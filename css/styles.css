@@ -98,6 +98,9 @@ h5 {
 #input {
   background-color: rgb(39, 33, 33);
   color: antiquewhite;
+  width: calc(99%);
+  height: 23%;
+  resize: vertical;
 }
 
 #output {
