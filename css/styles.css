@@ -91,6 +91,8 @@ h5 {
 #source {
   background-color: rgb(39, 33, 33);
   color: antiquewhite;
+  height: 414px; 
+  resize: vertical;
 }
 
 #input {
@@ -119,7 +121,7 @@ h5 {
   }
   #source {
     width: 366.5px;
-    height: 537px;
+    height: 540px;
     resize: none;
   }
 
