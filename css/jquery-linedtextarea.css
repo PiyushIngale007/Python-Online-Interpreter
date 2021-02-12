@@ -68,3 +68,13 @@
 .linedwrap .codelines .lineselect {
   color: red;
 }
+
+@media (max-width;786px) {
+  .linedwrap {
+    width: 408.5px;
+  }
+  .lines {
+    width: 25px;
+    height: 540px;
+  }
+}
