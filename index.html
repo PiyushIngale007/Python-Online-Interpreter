@@ -16,7 +16,12 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-     <img class="play" src="assets/play-button.png" />
+    <img class="play" id="myImg" src="assets/play-button.png" />
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <textarea readonly class="modal-content" id="console"></textarea>
+    </div>
     <div class="heading">
       <h2>Python Online Interpreter</h2>
       <button type="button" onclick="onClickRun()" class="ply_btn">
@@ -25,19 +30,14 @@
     </div>
     <div class="container">
       <div class="std_in">
-        <textarea
-          id="source"
-          style="width: calc(99%);"
-        >
+        <textarea id="source" style="width: calc(99%)">
 #Write your code here
 print("Hello World!!")</textarea
         >
 
         <h5>Input</h5>
 
-        <textarea
-          id="input"
-        ></textarea>
+        <textarea id="input"></textarea>
       </div>
       <div class="std_out">
         <img id="loading" src="assets/loading.gif" />
