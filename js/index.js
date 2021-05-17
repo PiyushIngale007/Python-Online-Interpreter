@@ -3,7 +3,7 @@ function encode(data) {
 }
 
 function getResult(token) {
-  console.log(token.token);
+  
   fetch(
     'https://judge0-ce.p.rapidapi.com/submissions/' +
       token.token +
@@ -18,7 +18,7 @@ function getResult(token) {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      
       $('#loading').css('display', 'none');
       if (data.stdout == null) {
         document.getElementById('output').innerHTML = data.stderr;
@@ -29,14 +29,14 @@ function getResult(token) {
 }
 function onClickRun() {
   document.getElementById('output').innerHTML = '';
-  console.log(encode($('#source').val()));
+
   var data = JSON.stringify({
     language_id: 71,
     source_code: encode($('#source').val()),
     stdin: encode($('#input').val()),
   });
 
-  console.log(data);
+
   $('#loading').css('display', 'unset');
   fetch(
     'https://judge0-ce.p.rapidapi.com/submissions?base64_encoded=true&fields=*',
